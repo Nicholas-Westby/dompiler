@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Dompiler - Examples
+title: Dompiler Examples
 description: Some examples of how to use Dompiler. Requires a modern browser (Babel can be used to use older browsers).
 ---
 
