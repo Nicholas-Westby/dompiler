@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Examples</title>
-</head>
-<body>
-<h1>
-    Examples of DOM Interactions with Template Literals
-</h1>
-<p>
-    This shows some ways you can interact with the DOM using JavaScript template literals.
-    These examples require Chrome (with Babel, you could remove this requirement).
-</p>
+---
+layout: default
+title: Dompiler - Examples
+description: Some examples of how to use Dompiler. Requires a modern browser (Babel can be used to use older browsers).
+---
+
 <dl>
     <dt>
         <a href="example-grid-modular/index.html">Grid (Modular)</a>
@@ -28,5 +20,3 @@
         You might use this approach with very simple components.
     </dd>
 </dl>
-</body>
-</html>
