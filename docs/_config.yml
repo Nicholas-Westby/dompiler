@@ -1,1 +1,4 @@
+title: Dompiler
+description: Dompiler turns JavaScript template literals into a templating engine.
+show_downloads: true
 theme: jekyll-theme-cayman
