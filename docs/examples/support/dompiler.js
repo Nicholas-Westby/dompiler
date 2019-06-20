@@ -1,4 +1,4 @@
-export class Compiler {
+export class Dompiler {
     constructor() {
         this.nestedElements = {};
         this.namedElements = {};

@@ -1,4 +1,4 @@
-import { Compiler } from "../../support/lib.js";
+import { Dompiler } from "../../support/dompiler.js";
 import { getData } from "../../support/data.js";
 
 /**
@@ -14,7 +14,7 @@ export function renderGrid() {
             compile,
             namedElementList,
             each
-        } = new Compiler().withBinding();
+        } = new Dompiler().withBinding();
 
     // Compile markup string into a document fragment.
     let compiled = compile(`

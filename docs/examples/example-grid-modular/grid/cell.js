@@ -1,4 +1,4 @@
-import { Compiler } from "../../support/lib.js";
+import { Dompiler } from "../../support/dompiler.js";
 
 /**
  * Renders a cell within the grid.
@@ -13,7 +13,7 @@ export function renderCell(item) {
         elements,
         namedElement,
         compile
-    } = new Compiler().withBinding();
+    } = new Dompiler().withBinding();
 
     // Compile markup string into a document fragment.
     let compiled = compile(`
