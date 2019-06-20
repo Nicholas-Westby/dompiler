@@ -5,8 +5,8 @@ import { renderGrid } from "./grid/grid.js";
  */
 function renderAll() {
     let results = renderGrid(),
-        main = document.querySelector("#main");
-    main.appendChild(results)
+        content = document.querySelector("#content");
+    content.appendChild(results);
 }
 
 // Start rendering.
