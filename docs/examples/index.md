@@ -19,4 +19,10 @@ description: Some examples of how to use Dompiler. Requires a modern browser (Ba
         This shows how to build a grid using a single template literal.
         You might use this approach with very simple components.
     </dd>
+    <dt>
+        <a href="example-dynamic-grid-inline/">Dynamic Grid (Inline)</a>
+    </dt>
+    <dd>
+        This shows how to build a dynamic grid using a single template literal.
+    </dd>
 </dl>
