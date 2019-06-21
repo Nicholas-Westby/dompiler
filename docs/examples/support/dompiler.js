@@ -2,7 +2,6 @@ export class Dompiler {
     constructor() {
         this.nestedElements = {};
         this.namedElements = {};
-        this.namedElementLists = {};
     }
     compile(value) {
         let compiled = document.createRange().createContextualFragment(value);
@@ -22,9 +21,9 @@ export class Dompiler {
         found.forEach(x => {
             let attr = x.getAttribute("lib-list");
             x.removeAttribute("lib-list");
-            let list = this.namedElementLists[attr] || [];
+            let list = this.namedElements[attr] || [];
             list.push(x);
-            this.namedElementLists[attr] = list;
+            this.namedElements[attr] = list;
         });
         return (compiled);
     }
@@ -63,8 +62,7 @@ export class Dompiler {
             namedElementList: this.namedElementList.bind(this),
             each: this.each.bind(this),
             nestElements: this.nestElements.bind(this),
-            elements: this.namedElements,
-            listElements: this.namedElementLists
+            elements: this.namedElements
         };
     }
 }

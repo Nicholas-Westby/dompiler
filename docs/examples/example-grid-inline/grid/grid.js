@@ -10,7 +10,7 @@ export function renderGrid() {
     // Variables.
     let items = getData(),
         {
-            listElements,
+            elements,
             compile,
             namedElementList,
             each
@@ -32,7 +32,7 @@ export function renderGrid() {
     let {
         Header,
         Bio
-    } = listElements;
+    } = elements;
     Header.forEach(x => x.style.backgroundColor = "#f00");
     Bio.forEach(x => x.style.backgroundColor = "#0f0");
 
