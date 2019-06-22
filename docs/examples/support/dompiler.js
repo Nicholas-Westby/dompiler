@@ -5,22 +5,22 @@ export class Dompiler {
     }
     compile(value) {
         let compiled = document.createRange().createContextualFragment(value);
-        let found = compiled.querySelectorAll("[lib-val]");
+        let found = compiled.querySelectorAll("[dompiler-element]");
         found.forEach(x => {
-            let attr = x.getAttribute("lib-val");
-            x.removeAttribute("lib-val");
+            let attr = x.getAttribute("dompiler-element");
+            x.removeAttribute("dompiler-element");
             this.namedElements[attr] = x;
         });
-        found = compiled.querySelectorAll("[lib-elements]");
+        found = compiled.querySelectorAll("[dompiler-nested-element]");
         found.forEach(x => {
-            let attr = x.getAttribute("lib-elements");
+            let attr = x.getAttribute("dompiler-nested-element");
             let newNode = this.nestedElements[attr];
             x.parentNode.replaceChild(newNode, x);
         });
-        found = compiled.querySelectorAll("[lib-list]");
+        found = compiled.querySelectorAll("[dompiler-list]");
         found.forEach(x => {
-            let attr = x.getAttribute("lib-list");
-            x.removeAttribute("lib-list");
+            let attr = x.getAttribute("dompiler-list");
+            x.removeAttribute("dompiler-list");
             let list = this.namedElements[attr] || [];
             list.push(x);
             this.namedElements[attr] = list;
@@ -28,10 +28,10 @@ export class Dompiler {
         return (compiled);
     }
     namedElement(name) {
-        return `lib-val="${name}"`;
+        return `dompiler-element="${name}"`;
     }
     namedElementList(name) {
-        return `lib-list="${name}"`;
+        return `dompiler-list="${name}"`;
     }
     each(items, transformer) {
         let fragment = document.createDocumentFragment();
@@ -53,7 +53,7 @@ export class Dompiler {
             fragment.appendChild(x);
         });
         this.nestedElements[key] = fragment;
-        return `<div lib-elements="${key}"></div>`;
+        return `<div dompiler-nested-element="${key}"></div>`;
     }
     withBinding() {
         return {
