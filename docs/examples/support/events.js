@@ -20,8 +20,22 @@ export class Events {
         }
     }
     static listen(name, element, callback) {
-        element.addEventListener(name, (e) => {
-            callback(e.detail);
-        });
+
+        // Document fragment or normal node?
+        if (element.nodeType === 11) {
+
+            // Attach event handler to each root node in the document fragment.
+            element.childNodes.forEach(x => x.addEventListener(name, (e) => {
+                callback(e.detail);
+            }));
+
+        } else {
+
+            // Attach event handler to node.
+            element.addEventListener(name, (e) => {
+                callback(e.detail);
+            });
+
+        }
     }
 }

@@ -7,11 +7,10 @@ import { Events } from "../support/events.js";
  */
 function renderAll(data) {
     let results = renderGrid(data),
-        wrapper = document.querySelector("#wrapper"),
-        newWrapper = wrapper.cloneNode(false);
-    newWrapper.appendChild(results);
-    wrapper.parentNode.replaceChild(newWrapper, wrapper);
-    Events.listen("grid.addItem", newWrapper, (item) => addItemHandler(data, item));
+        wrapper = document.querySelector("#wrapper");
+    Events.listen("grid.addItem", results, item => addItemHandler(data, item));
+    wrapper.innerHTML = "";
+    wrapper.appendChild(results);
 }
 
 function addItemHandler(data, item) {
