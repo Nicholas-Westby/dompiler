@@ -15,6 +15,9 @@ export function getData() {
     }, {
         name: "Sally",
         bio: "Sally works with thread."
+    }, {
+        name: "Jack",
+        bio: "Jack works with pumpkins."
     }];
     return (items);
 }
