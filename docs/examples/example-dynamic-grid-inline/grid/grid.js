@@ -28,7 +28,7 @@ export function renderGrid(items) {
             `)}
         </div>
         <div>
-            <button ${namedElement("AddButton")} type="button">Add Item</button>
+            <button class="grid__add-button" ${namedElement("AddButton")} type="button">Add Item</button>
         </div>
     `);
 
