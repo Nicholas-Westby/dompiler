@@ -3,16 +3,32 @@
 
 @import 'jekyll-theme-cayman';
 
+.project-name {
+
+    // Add some space above the project name so it doesn't collide with the home link on
+    // mobile for large titles.
+    margin-top: 25px;
+
+}
+
 .home-link {
     position: absolute;
     right: 10px;
     top: 10px;
-    padding: 10px;
     font-weight: bold;
     font-size: 20px;
-    background: rgba(255, 255, 255, .8) url("/assets/images/home.svg") no-repeat left;
+    background: rgba(255, 255, 255, 0.7) url("/assets/images/home.svg") no-repeat center;
+    background-size: 40px;
     width: 50px;
     height: 50px;
     border-radius: 5px;
-    border: 3px solid black;
+    border: 2px solid black;
+    transition:
+            border 0.25s,
+            background-color 0.25s;
+
+    &:focus, &:hover {
+        border-width: 6px;
+        background-color: rgba(255, 255, 255, 1);
+    }
 }
