@@ -20,14 +20,15 @@
         }
 
         &__delete-button {
-            background-color: #b1a275;
-            border: 2px solid #c00;
-            color: #c00;
+            background-color: #c00;
+            border: none;
+            color: #fff;
             font-weight: bold;
             width: 35px;
             height: 35px;
             display: block;
             margin-left: auto;
+            box-shadow: 4px 4px 3px 0 rgba(0,0,0,0.75);
         }
 
         &__header {
