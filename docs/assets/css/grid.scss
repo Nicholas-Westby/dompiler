@@ -34,11 +34,13 @@
         h2 &__header {
             color: #fff;
             padding: 5px 5px 5px 10px;
+            box-shadow: 4px 4px 9px 0 rgba(0,0,0,0.75);
         }
 
         &__bio {
             color: #ddd;
             padding: 5px 5px 5px 10px;
+            box-shadow: 4px 4px 9px 0 rgba(0,0,0,0.75);
         }
 
     }
