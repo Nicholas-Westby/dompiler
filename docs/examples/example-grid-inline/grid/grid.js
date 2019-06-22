@@ -21,8 +21,8 @@ export function renderGrid() {
         <div class="grid">
             ${each(items, item => `
                 <div class="grid__item">
-                    <h2 ${namedElementList("Header")}>${item.name}</h2>
-                    <p ${namedElementList("Bio")}>${item.bio}</p>
+                    <h2 class="grid__item__header" ${namedElementList("Header")}>${item.name}</h2>
+                    <p class="grid__item__bio" ${namedElementList("Bio")}>${item.bio}</p>
                 </div>
             `)}
         </div>
