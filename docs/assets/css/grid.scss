@@ -13,6 +13,14 @@
         border-radius: 10px;
         box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.75);
         margin-top: 20px;
+        transition:
+                box-shadow .25s,
+                transform .25s;
+
+        &:hover {
+            box-shadow: 6px 6px 10px 0 rgba(0,0,0,0.75);
+            transform: scale(1.05);
+        }
     }
 
     &__item {
