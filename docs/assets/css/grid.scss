@@ -4,11 +4,22 @@
 .grid {
     display: flex;
     flex-wrap: wrap;
-}
 
-.grid__item {
-    margin: 0 20px 20px 0;
-    padding: 20px;
-    background-color: #aaf;
-    min-width: 200px;
+    &__item {
+        margin: 0 20px 20px 0;
+        padding: 20px;
+        background-color: #aaf;
+        min-width: 200px;
+
+        &__delete-button {
+            background-color: #f44;
+            border: 2px solid #555;
+            color: #555;
+            font-weight: bold;
+            width: 35px;
+            height: 35px;
+        }
+
+    }
+
 }
