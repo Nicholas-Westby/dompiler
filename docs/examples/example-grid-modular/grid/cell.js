@@ -28,8 +28,8 @@ export function renderCell(item) {
         Header,
         Bio
     } = elements;
-    Header.style.backgroundColor = "#f00";
-    Bio.style.backgroundColor = "#0f0";
+    Header.style.backgroundColor = "#7a9a5d";
+    Bio.style.backgroundColor = "#71ad97";
 
     // Return compiled markup.
     return compiled;

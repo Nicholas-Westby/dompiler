@@ -33,8 +33,8 @@ export function renderGrid() {
         Header,
         Bio
     } = elements;
-    Header.forEach(x => x.style.backgroundColor = "#f00");
-    Bio.forEach(x => x.style.backgroundColor = "#0f0");
+    (Header || []).forEach(x => x.style.backgroundColor = "#7a9a5d");
+    (Bio || []).forEach(x => x.style.backgroundColor = "#71ad97");
 
     // Return compiled markup.
     return (compiled);
