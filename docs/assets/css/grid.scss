@@ -20,14 +20,24 @@
         }
 
         &__delete-button {
-            background-color: #f44;
-            border: 2px solid #555;
-            color: #555;
+            background-color: #b1a275;
+            border: 2px solid #c00;
+            color: #c00;
             font-weight: bold;
             width: 35px;
             height: 35px;
             display: block;
             margin-left: auto;
+        }
+
+        &__header {
+            color: #fff;
+            padding: 5px 5px 5px 10px;
+        }
+
+        &__bio {
+            color: #ddd;
+            padding: 5px 5px 5px 10px;
         }
 
     }

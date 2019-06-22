@@ -22,8 +22,8 @@ export function renderGrid(items) {
             ${each(items, item => `
                 <div class="grid__item">
                     <button class="grid__item__delete-button" ${namedElementList("DeleteButtons")}>X</button>
-                    <h2 ${namedElementList("Header")}>${item.name}</h2>
-                    <p ${namedElementList("Bio")}>${item.bio}</p>
+                    <h2 class="grid__item__header" ${namedElementList("Header")}>${item.name}</h2>
+                    <p class="grid__item__bio" ${namedElementList("Bio")}>${item.bio}</p>
                 </div>
             `)}
         </div>
@@ -39,8 +39,8 @@ export function renderGrid(items) {
         AddButton,
         DeleteButtons
     } = elements;
-    (Header || []).forEach(x => x.style.backgroundColor = "#fea");
-    (Bio || []).forEach(x => x.style.backgroundColor = "#0f0");
+    (Header || []).forEach(x => x.style.backgroundColor = "#7a9a5d");
+    (Bio || []).forEach(x => x.style.backgroundColor = "#71ad97");
     (DeleteButtons || []).forEach((x, i) => x.addEventListener("click", () => deleteItemHandler(i, DeleteButtons[i])));
     AddButton.addEventListener("click", () => addItemHandler(AddButton));
 
