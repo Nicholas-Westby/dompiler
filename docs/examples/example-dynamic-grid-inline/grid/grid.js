@@ -23,11 +23,12 @@ export function renderGrid(items) {
                 <div class="grid__item">
                     <h2 ${namedElementList("Header")}>${item.name}</h2>
                     <p ${namedElementList("Bio")}>${item.bio}</p>
+                    <button ${namedElementList("DeleteButtons")}>X</button>
                 </div>
             `)}
         </div>
         <div>
-            <button ${namedElement("AddItem")} type="button">Add Item</button>
+            <button ${namedElement("AddButton")} type="button">Add Item</button>
         </div>
     `);
 
@@ -35,15 +36,21 @@ export function renderGrid(items) {
     let {
         Header,
         Bio,
-        AddItem
+        AddButton,
+        DeleteButtons
     } = elements;
-    Header.forEach(x => x.style.backgroundColor = "#fea");
-    Bio.forEach(x => x.style.backgroundColor = "#0f0");
-    AddItem.addEventListener("click", () => addItemHandler(AddItem));
+    (Header || []).forEach(x => x.style.backgroundColor = "#fea");
+    (Bio || []).forEach(x => x.style.backgroundColor = "#0f0");
+    (DeleteButtons || []).forEach((x, i) => x.addEventListener("click", () => deleteItemHandler(i, DeleteButtons[i])));
+    AddButton.addEventListener("click", () => addItemHandler(AddButton));
 
     // Return compiled markup.
     return compiled;
 
+}
+
+function deleteItemHandler(index, element) {
+    Events.emit("grid.deleteItem", element, index);
 }
 
 function addItemHandler(element) {

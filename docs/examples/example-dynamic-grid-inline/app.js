@@ -9,8 +9,14 @@ function renderAll(data) {
     let results = renderGrid(data),
         wrapper = document.querySelector("#wrapper");
     Events.listen("grid.addItem", results, item => addItemHandler(data, item));
+    Events.listen("grid.deleteItem", results, index => deleteItemHandler(data, index));
     wrapper.innerHTML = "";
     wrapper.appendChild(results);
+}
+
+function deleteItemHandler(data, index) {
+    data.splice(index, 1);
+    renderAll(data);
 }
 
 function addItemHandler(data, item) {
