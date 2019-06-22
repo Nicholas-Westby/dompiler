@@ -39,7 +39,7 @@ export function renderGrid(items) {
         AddButton,
         DeleteButtons
     } = elements;
-    (Header || []).forEach(x => x.style.backgroundColor = "#fff");
+    (Header || []).forEach(x => x.style.backgroundColor = "#7a9a5d");
     (Bio || []).forEach(x => x.style.backgroundColor = "#71ad97");
     (DeleteButtons || []).forEach((x, i) => x.addEventListener("click", () => deleteItemHandler(i, DeleteButtons[i])));
     AddButton.addEventListener("click", () => addItemHandler(AddButton));
