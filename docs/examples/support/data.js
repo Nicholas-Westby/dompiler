@@ -18,6 +18,9 @@ export function getData() {
     }, {
         name: "Jack",
         bio: "Jack works with pumpkins."
+    }, {
+        name: "Ron",
+        bio: "Ron works with swans."
     }];
     return (items);
 }
