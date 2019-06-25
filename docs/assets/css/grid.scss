@@ -4,6 +4,9 @@
 .grid {
     display: flex;
     flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 
     &__add-button.grid__add-button {
         border: none;

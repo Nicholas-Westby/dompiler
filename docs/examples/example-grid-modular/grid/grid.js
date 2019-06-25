@@ -17,9 +17,9 @@ export function renderGrid() {
 
     // Compile markup string into a document fragment.
     let compiled = compile(`
-        <div class="grid">
+        <ul class="grid">
             ${nestElements("grid-items", items)}
-        </div>
+        </ul>
     `);
 
     // Return compiled markup.

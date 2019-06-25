@@ -18,14 +18,14 @@ export function renderGrid() {
 
     // Compile markup string into a document fragment.
     let compiled = compile(`
-        <div class="grid">
+        <ul class="grid">
             ${each(items, item => `
-                <div class="grid__item">
+                <li class="grid__item">
                     <h2 class="grid__item__header" ${namedElementList("Header")}>${item.name}</h2>
                     <p class="grid__item__bio" ${namedElementList("Bio")}>${item.bio}</p>
-                </div>
+                </li>
             `)}
-        </div>
+        </ul>
     `);
 
     // Interact with DOM elements.

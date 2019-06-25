@@ -19,15 +19,15 @@ export function renderGrid(items) {
 
     // Compile markup string into a document fragment.
     let compiled = compile(`
-        <div class="grid">
+        <ul class="grid">
             ${each(items, item => `
-                <div class="grid__item">
+                <li class="grid__item">
                     <button class="grid__item__delete-button" ${namedElementList("DeleteButtons")}>X</button>
                     <h2 class="grid__item__header" ${namedElementList("Header")}>${item.name}</h2>
                     <p class="grid__item__bio" ${namedElementList("Bio")}>${item.bio}</p>
-                </div>
+                </li>
             `)}
-        </div>
+        </ul>
         <div>
             <button class="grid__add-button" ${namedElement("AddButton")} type="button">Add Item</button>
         </div>

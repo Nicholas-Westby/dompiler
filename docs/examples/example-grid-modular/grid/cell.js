@@ -17,10 +17,10 @@ export function renderCell(item) {
 
     // Compile markup string into a document fragment.
     let compiled = compile(`
-        <div class="grid__item">
+        <li class="grid__item">
             <h2 class="grid__item__header" ${namedElement("Header")}>${item.name}</h2>
             <p class="grid__item__bio" ${namedElement("Bio")}>${item.bio}</p>
-        </div>
+        </li>
     `);
 
     // Interact with DOM elements.
