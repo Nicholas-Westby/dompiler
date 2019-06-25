@@ -3,6 +3,7 @@ import { Events } from "../../support/events.js";
 
 /**
  * Renders a grid containing multiple cells.
+ * @param items The data items to render.
  * @returns {DocumentFragment} The rendered grid as a document fragment.
  */
 export function renderGrid(items) {
@@ -44,8 +45,11 @@ export function renderGrid(items) {
     (DeleteButtons || []).forEach((x, i) => x.addEventListener("click", () => deleteItemHandler(i, DeleteButtons[i])));
     AddButton.addEventListener("click", () => addItemHandler(AddButton));
 
-    // Return compiled markup.
-    return compiled;
+    // Return compiled markup, and element references.
+    return {
+        elements: compiled,
+        AddButton: AddButton
+    };
 
 }
 

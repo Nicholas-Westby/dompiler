@@ -4,14 +4,29 @@ import { Events } from "../support/events.js";
 
 /**
  * Renders the grid and inserts it into the body of the page.
+ * @param data The data to render.
+ * @param restoreFocus Restore focus to the "Add Item" button?
  */
-function renderAll(data) {
+function renderAll(data, restoreFocus) {
+
+    // Variables.
     let results = renderGrid(data),
+        elements = results.elements,
         wrapper = document.querySelector("#wrapper");
-    Events.listen("grid.addItem", results, item => addItemHandler(data, item));
-    Events.listen("grid.deleteItem", results, index => deleteItemHandler(data, index));
+
+    // Listen for events.
+    Events.listen("grid.addItem", elements, item => addItemHandler(data, item));
+    Events.listen("grid.deleteItem", elements, index => deleteItemHandler(data, index));
+
+    // Replace the DOM.
     wrapper.innerHTML = "";
-    wrapper.appendChild(results);
+    wrapper.appendChild(elements);
+
+    // Restore focus to the "Add Item" button after replacing the DOM.
+    if (restoreFocus) {
+        results.AddButton.focus();
+    }
+
 }
 
 function deleteItemHandler(data, index) {
@@ -21,8 +36,8 @@ function deleteItemHandler(data, index) {
 
 function addItemHandler(data, item) {
     data.push(item);
-    renderAll(data);
+    renderAll(data, true);
 }
 
 // Start rendering.
-renderAll(getData());
+renderAll(getData(), false);
