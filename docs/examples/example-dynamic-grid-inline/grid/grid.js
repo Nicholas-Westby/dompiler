@@ -48,7 +48,8 @@ export function renderGrid(items) {
     // Return compiled markup, and element references.
     return {
         elements: compiled,
-        AddButton: AddButton
+        AddButton: AddButton,
+        DeleteButtons: DeleteButtons
     };
 
 }
