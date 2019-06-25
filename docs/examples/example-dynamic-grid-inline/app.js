@@ -13,7 +13,7 @@ function renderAll(data, options) {
     options = options || {};
 
     // Variables.
-    let results = renderGrid(data, options.focusIndex),
+    let results = renderGrid(data),
         elements = results.elements,
         wrapper = document.querySelector("#wrapper");
 
