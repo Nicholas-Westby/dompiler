@@ -22,7 +22,9 @@ export function renderGrid(items) {
         <ul class="grid">
             ${each(items, item => `
                 <li class="grid__item">
-                    <button class="grid__item__delete-button" ${namedElementList("DeleteButtons")}>X</button>
+                    <button class="grid__item__delete-button" ${namedElementList("DeleteButtons")}>
+                        <span class="grid__item__delete-button__text">X</span>
+                    </button>
                     <h2 class="grid__item__header" ${namedElementList("Header")}>${item.name}</h2>
                     <p class="grid__item__bio" ${namedElementList("Bio")}>${item.bio}</p>
                 </li>
