@@ -69,7 +69,7 @@ var compiler = new Dompiler()
 var compile = compiler.compile;
 ```
 
-If you use Browserify to minify all your JavaScript into a single file, you can change this:
+If you use Browserify to combine all your JavaScript into a single file, you can change this:
 
 ```html
 <script src="app.js" type="module"></script>
