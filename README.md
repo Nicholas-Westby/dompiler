@@ -10,6 +10,10 @@ Thanks to JavaScript template literals, the syntax is essentially just HTML with
 
 You can view the website (which has examples) at [dompiler.com](https://www.dompiler.com/).
 
+You can make things like this entirely with HTML embedded in JavaScript:
+
+![Dompiler Grid Example](assets/images/grid.png?raw=true "Dompiler Grid Example")
+
 ### Can I See a Short Example?
 
 This is about as basic as it gets:
