@@ -80,3 +80,50 @@ Into this (i.e., remove the type of "module"):
 ```html
 <script src="app.js"></script>
 ```
+
+### Why Not Just Use a Template Literal?
+
+Dompiler adds some extra niceties:
+
+```javascript
+// Get Dompiler.
+import { Dompiler } from "./dompiler.js";
+
+// Variables.
+let {
+        compile,
+        each
+    } = new Dompiler().withBinding(),
+    body = document.querySelector("body"),
+    colors = [{
+        name: "Red",
+        hex: "#f00"
+    }, {
+        name: "Green",
+        hex: "#0f0"
+    }];
+
+// Compile markup to DOM.
+let compiled = compile(`
+        <ul class="color-list">
+            ${each(colors, color => `
+                <li class="color-list__item" style="background-color: ${color.hex};">
+                    ${color.name}
+                </li>
+            `)}
+        </ul>
+    `);
+
+// Insert DOM into page.
+body.appendChild(compiled);
+```
+
+In this case, it's adding what is essentially a for loop.
+
+### Where Can I Learn More?
+
+Take a look at the examples on [dompiler.com](https://www.dompiler.com/).
+
+You can use your browser inspector to look at the code.
+
+Or, you can browse the "docs" folder of this repo, which is the source code for dompiler.com (it's just a GitHub pages website).
