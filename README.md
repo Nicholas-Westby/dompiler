@@ -8,6 +8,8 @@ It allows you to build DOM elements in JavaScript rather than in HTML.
 
 Thanks to JavaScript template literals, the syntax is essentially just HTML within JavaScript.
 
+You can view the website (which has examples) at [dompiler.com](https://www.dompiler.com/).
+
 ### Can I See a Short Example?
 
 This is about as basic as it gets:
