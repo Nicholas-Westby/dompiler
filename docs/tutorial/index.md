@@ -11,4 +11,10 @@ description: This is a step-by-step guide to using Dompiler.
     <dd>
         Inject variables into your markup.
     </dd>
+    <dt>
+        <a href="variables/">Conditionals</a>
+    </dt>
+    <dd>
+        Change your markup depending on a condition (like an if statement).
+    </dd>
 </dl>
