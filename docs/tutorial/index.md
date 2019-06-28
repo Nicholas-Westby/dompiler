@@ -12,7 +12,7 @@ description: This is a step-by-step guide to using Dompiler.
         Inject variables into your markup.
     </dd>
     <dt>
-        <a href="variables/">Conditionals</a>
+        <a href="conditionals/">Conditionals</a>
     </dt>
     <dd>
         Change your markup depending on a condition (like an if statement).
