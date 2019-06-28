@@ -38,9 +38,8 @@ The markup would look something like this:
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <title>Variables</title>
 </head>
 <body>
