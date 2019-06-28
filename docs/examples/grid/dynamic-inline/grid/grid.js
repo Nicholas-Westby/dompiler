@@ -1,5 +1,5 @@
-import { Dompiler } from "../../support/dompiler.js";
-import { Events } from "../../support/events.js";
+import { Dompiler } from "../../../../library/dompiler.js";
+import { Events } from "../../../../library/events.js";
 
 /**
  * Renders a grid containing multiple cells.

@@ -134,6 +134,6 @@ You can use your browser inspector to look at the code.
 
 Or, you can browse the "docs" folder of this repo, which is the source code for dompiler.com (it's just a GitHub pages website).
 
-For example, if you want to view the code for this example: https://www.dompiler.com/examples/example-dynamic-grid-inline/
+For example, if you want to view the code for this example: https://www.dompiler.com/examples/grid/dynamic-inline/
 
-You can do so here: https://github.com/Nicholas-Westby/dompiler/tree/master/docs/examples/example-dynamic-grid-inline
+You can do so here: https://github.com/Nicholas-Westby/dompiler/tree/master/docs/examples/grid/dynamic-inline

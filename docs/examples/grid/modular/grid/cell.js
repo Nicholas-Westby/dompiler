@@ -1,4 +1,4 @@
-import { Dompiler } from "../../support/dompiler.js";
+import { Dompiler } from "../../../../library/dompiler.js";
 
 /**
  * Renders a cell within the grid.

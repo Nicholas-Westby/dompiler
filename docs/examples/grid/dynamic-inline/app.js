@@ -1,6 +1,6 @@
 import { renderGrid } from "./grid/grid.js";
 import { getData } from "../support/data.js";
-import { Events } from "../support/events.js";
+import { Events } from "../../../library/events.js";
 
 /**
  * Renders the grid and inserts it into the body of the page.
