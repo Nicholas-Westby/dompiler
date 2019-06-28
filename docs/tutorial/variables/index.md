@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Tutorial: Variables
+title: Tutorial - Variables
 description: This shows how to use variables in markup.
 ---
 
