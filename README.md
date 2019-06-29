@@ -65,13 +65,13 @@ For example, you can add Dompiler to your app and then make it compatible with o
 And if you like, you can replace code like this:
 
 ```javascript
-let { compile } = new Dompiler()
+let { compile } = new Dompiler();
 ```
 
 With code like this:
 
 ```javascript
-var compiler = new Dompiler()
+var compiler = new Dompiler();
 var compile = compiler.compile;
 ```
 
