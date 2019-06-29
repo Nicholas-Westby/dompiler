@@ -35,8 +35,8 @@ export class Dompiler {
     }
     each(items, transformer) {
         let fragment = document.createDocumentFragment();
-        items.forEach(x => {
-            let item = transformer(x);
+        items.forEach((x, i) => {
+            let item = transformer(x, i);
             let itemFragment = document.createRange().createContextualFragment(item);
             fragment.appendChild(itemFragment);
         });
