@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: example
 title: Modular Grid Example
 description: This shows how to use Dompiler to create a grid using multiple files.
 ---

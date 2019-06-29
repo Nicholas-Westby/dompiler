@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: example
 title: Inline Dynamic Grid Example
 description: This shows how to use Dompiler to create a dynamic grid in a single file.
 ---
