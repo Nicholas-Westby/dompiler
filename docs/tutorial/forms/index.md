@@ -125,7 +125,7 @@ The markup would look something like this:
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Variables</title>
+    <title>Dompiler Example</title>
 </head>
 <body>
     <div class="example-container"></div>
