@@ -17,4 +17,10 @@ description: This is a step-by-step guide to using Dompiler.
     <dd>
         Change your markup depending on a condition (like an if statement).
     </dd>
+    <dt>
+        <a href="loops/">Loops</a>
+    </dt>
+    <dd>
+        Repeat markup for each item in an array.
+    </dd>
 </dl>
