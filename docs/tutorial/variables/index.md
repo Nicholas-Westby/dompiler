@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: tutorial
 title: Variables Tutorial
 description: This shows how to use variables in markup.
 ---

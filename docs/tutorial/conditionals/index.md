@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: tutorial
 title: Conditionals Tutorial
 description: This shows how to change your markup based on a condition.
 ---

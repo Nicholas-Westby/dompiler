@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: tutorial
 title: Looping Tutorial
 description: This shows how to render markup for each element in an array.
 ---

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: tutorial
 title: DOM Reference Tutorial
 description: This shows how to interact with DOM elements using DOM references.
 ---

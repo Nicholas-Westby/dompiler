@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: tutorial
 title: Forms Tutorial
 description: This shows how to alter the DOM in real time based on form fields.
 ---
