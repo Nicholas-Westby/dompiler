@@ -42,9 +42,7 @@ let {
 Form.addEventListener("submit", e => e.preventDefault());
 
 // Attach event listeners to the form elements.
-FirstName.addEventListener("input", updateResponse);
-LastName.addEventListener("input", updateResponse);
-Color.addEventListener("input", updateResponse);
+[FirstName, LastName, Color].forEach(x => x.addEventListener("input", updateResponse));
 
 // Append compiled markup to container.
 let container = document.querySelector(".example-container");
