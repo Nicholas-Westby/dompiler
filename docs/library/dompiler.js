@@ -4,7 +4,7 @@ export class Dompiler {
         this.namedElements = {};
     }
     compile(value) {
-        let compiled = document.createRange().createContextualFragment(value);
+        let compiled = document.createRange().createContextualFragment(value.trim());
         let found = compiled.querySelectorAll("[dompiler-element]");
         found.forEach(x => {
             let attr = x.getAttribute("dompiler-element");
