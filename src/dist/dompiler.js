@@ -121,6 +121,17 @@ class Dompiler {
     }
 
     /**
+     * Nests the element in the specified document fragment within a string that will
+     * at some point be compiled with Dompiler.
+     * @param {DocumentFragment} fragment The document fragment to nest.
+     * @returns {string} Outputs a DOM element that will be used during compilation in order
+     *          to let Dompiler know where to apply the nested element.
+     */
+    nestElement(fragment) {
+        return this.nestElements([fragment]);
+    }
+
+    /**
      * Returns an object containing the Dompiler functions bound to the current instance. This
      * is useful for when you want to pass these functions around and want them to continue
      * working as designed.
@@ -133,6 +144,7 @@ class Dompiler {
             namedElementList: this.namedElementList.bind(this),
             each: this.each.bind(this),
             nestElements: this.nestElements.bind(this),
+            nestElement: this.nestElement.bind(this),
             elements: this.namedElements
         };
     }
