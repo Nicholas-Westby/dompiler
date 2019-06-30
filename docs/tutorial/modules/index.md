@@ -135,9 +135,7 @@ When you combine all three files, you get an intro message followed by a list of
 You may or may not have noticed that the two modules were rendered in a slightly different way. Here's how the intro module was rendered:
 
 ```javascript
-`
-    ${nestElement(renderIntro(message))}
-`
+`${nestElement(renderIntro(message))}`
 ```
 
 This is using the `nestElement` method to nesting the intro module (note the method name indicates it's dealing with a single object).
@@ -145,11 +143,9 @@ This is using the `nestElement` method to nesting the intro module (note the met
 Here's how the list was rendered using the list item module:
 
 ```javascript
-`
-    <ul>
-        ${nestElements(listItems.map(renderListItem))}
-    </ul>
-`
+`<ul>
+    ${nestElements(listItems.map(renderListItem))}
+</ul>`
 ```
 
 This is using the `nestElements` method to render an array of objects. Each item in the array is a document fragment. This is because we called the `.map` function to convert the array of strings into an array of document fragments, each of which were produced by our list item module (i.e., the `renderListItem` function).
