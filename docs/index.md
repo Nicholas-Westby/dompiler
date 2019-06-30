@@ -5,6 +5,12 @@ title: Dompiler
 
 <dl>
     <dt>
+        <a href="benefits/">Benefits</a>
+    </dt>
+    <dd>
+        Learn why you should give Dompiler a try.
+    </dd>
+    <dt>
         <a href="examples/">Examples</a>
     </dt>
     <dd>
