@@ -20,5 +20,8 @@
     "bugs": {
         "url": "https://github.com/Nicholas-Westby/dompiler/issues"
     },
-    "homepage": "https://www.dompiler.com/"
+    "homepage": "https://www.dompiler.com/",
+    "devDependencies": {
+        "terser": "^4.0.1"
+    }
 }
