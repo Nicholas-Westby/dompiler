@@ -4,7 +4,8 @@
     "description": "Dompiler is a tiny framework that helps with HTML templating with plain JavaScript.",
     "main": "index.js",
     "scripts": {
-        "build": "node build.js"
+        "build": "node build.js",
+        "size": "node size.js"
     },
     "repository": {
         "type": "git",
@@ -22,6 +23,7 @@
     },
     "homepage": "https://www.dompiler.com/",
     "devDependencies": {
+        "node-gzip": "^1.1.2",
         "terser": "^4.0.1"
     }
 }
