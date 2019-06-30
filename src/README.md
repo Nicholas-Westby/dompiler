@@ -76,7 +76,7 @@ You don't need Node/NPM to use Dompiler. You can just use it directly in the bro
 
 To read about that, got to [dompiler.com](https://www.dompiler.com/).
 
-The short version is that you use `type="module"` when including your script, and the require statement looks like this:
+The short version is that you use `type="module"` when including your script, and you use an import statement rather than a require statement:
 
 ```javascript
 import Dompiler from "./some-path/dompiler.js";
