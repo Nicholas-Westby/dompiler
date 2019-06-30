@@ -10,7 +10,7 @@ Suppose you want to list out each day of the week in the markup rendered by Domp
 
 ```javascript
 // Import Dompiler.
-import { Dompiler } from "../../library/dompiler.js";
+import Dompiler from "../../library/dompiler.js";
 
 // Initialize Dompiler.
 let {

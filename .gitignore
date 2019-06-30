@@ -1,2 +1,5 @@
 # Ignore WebStorm files.
 .idea
+
+# Ignore Node modules.
+node_modules

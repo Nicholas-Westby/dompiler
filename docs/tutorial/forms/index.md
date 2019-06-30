@@ -11,7 +11,7 @@ Suppose you want to use JavaScript to manipulate a few DOM elements based on inp
 
 ```javascript
 // Import Dompiler.
-import { Dompiler } from "../../library/dompiler.js";
+import Dompiler from "../../library/dompiler.js";
 
 // Initialize Dompiler.
 let {

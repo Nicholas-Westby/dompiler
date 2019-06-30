@@ -1,4 +1,4 @@
-import { Dompiler } from "../../../../library/dompiler.js";
+import Dompiler from "../../../../library/dompiler.js";
 import { getData } from "../../support/data.js";
 
 /**

@@ -10,7 +10,7 @@ Suppose you have a variable, `message`, that you want to be displayed, along wit
 
 ```javascript
 // Import Dompiler.
-import { Dompiler } from "../../library/dompiler.js";
+import Dompiler from "../../library/dompiler.js";
 
 // Initialize Dompiler.
 let {

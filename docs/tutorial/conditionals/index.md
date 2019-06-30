@@ -10,7 +10,7 @@ Suppose you have a variable, `isWeekend`, that you want to use to change a porti
 
 ```javascript
 // Import Dompiler.
-import { Dompiler } from "../../library/dompiler.js";
+import Dompiler from "../../library/dompiler.js";
 
 // Initialize Dompiler.
 let {
