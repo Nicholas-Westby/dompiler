@@ -64,6 +64,21 @@ Then you'd run browserify to create the `app.min.js` file from that one.
 
 And that's it. You should be able to view your HTML file in the browser.
 
+# Browser Module Usage
+
+You don't need Node/NPM to use Dompiler. You can just use it directly in the browser.
+
+To read about that, got to [dompiler.com](https://www.dompiler.com/).
+
+The short version is that you use `type="module"` when including your script, and the require statement looks like this:
+
+```javascript
+import Dompiler from "./some-path/dompiler.js";
+import Events from "./some-path/events.js";
+```
+
+And that does not require you to use Browserify.
+
 # Building Dompiler Source (Uncommon)
 
 This section is only if you're a developer contributing to Dompiler in the Dompiler repository.
