@@ -8,6 +8,12 @@ Each page in this tutorial builds on the knowledge from the previous pages. It i
 
 <dl>
     <dt>
+        <a href="getting-started/">Getting Started</a>
+    </dt>
+    <dd>
+        Get a copy of Dompiler on your computer.
+    </dd>
+    <dt>
         <a href="variables/">Variables</a>
     </dt>
     <dd>

@@ -11,6 +11,12 @@ title: Dompiler
         See a few examples of what Dompiler can do.
     </dd>
     <dt>
+        <a href="tutorial/getting-started/">Getting Started</a>
+    </dt>
+    <dd>
+        Get a copy of Dompiler on your computer.
+    </dd>
+    <dt>
         <a href="tutorial/">Tutorial</a>
     </dt>
     <dd>
