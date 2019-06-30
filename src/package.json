@@ -1,6 +1,6 @@
 {
     "name": "dompiler",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Dompiler is a tiny framework that helps with HTML templating with plain JavaScript.",
     "main": "index.js",
     "scripts": {

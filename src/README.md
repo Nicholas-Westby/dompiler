@@ -1,3 +1,9 @@
+# Overview
+
+Dompiler is a tiny JavaScript library that facilitates HTML templating.
+
+You can use it with Node/NPM or directly in the browser without compilation. Both approaches are explained below (see "NPM Usage" and "Browser Module Usage").
+
 # NPM Usage
 
 To install Dompiler, run the following command from your terminal:
