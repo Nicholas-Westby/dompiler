@@ -1,3 +1,9 @@
+---
+layout: default
+title: Benefits of Dompiler
+description: The reasons you should give Dompiler a try.
+---
+
 # Why Should I Use Dompiler?
 
 Here are some of the benefits:
