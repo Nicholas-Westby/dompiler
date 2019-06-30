@@ -56,7 +56,7 @@ export class Dompiler {
      * Used to capture a reference to a DOM element by a given name.
      * @param {string} name The name to associate with the DOM element.
      * @returns {string} Outputs the attribute that will be attached to the DOM element
-     *                   to make it possible for Dompiler to find it during compilation.
+     *          to make it possible for Dompiler to find it during compilation.
      */
     namedElement(name) {
         return `dompiler-element="${name}"`;
@@ -66,7 +66,7 @@ export class Dompiler {
      * Used to capture a reference to a collection of DOM elements by a given name.
      * @param {string} name The name to associate with the DOM elements.
      * @returns {string} Outputs the attribute that will be attached to the DOM elements
-     *                   to make it possible for Dompiler to find them during compilation.
+     *          to make it possible for Dompiler to find them during compilation.
      */
     namedElementList(name) {
         return `dompiler-list="${name}"`;
@@ -78,7 +78,7 @@ export class Dompiler {
      * @param {*[]} items An array of items.
      * @param {function} transformer The function that transforms an item into a string.
      * @returns {string} The combined version of the strings that were returned from the
-     *                   transformer function.
+     *          transformer function.
      */
     each(items, transformer) {
         let fragment = document.createDocumentFragment();
@@ -107,7 +107,7 @@ export class Dompiler {
      * @param {string} key The key to use to look up the document fragment during compilation.
      * @param {DocumentFragment[]} fragments The document fragments to nest.
      * @returns {string} Outputs a DOM element that will be used during compilation in order
-     *                   to let Dompiler know where to apply the nested elements.
+     *          to let Dompiler know where to apply the nested elements.
      */
     nestElements(key, fragments) {
         let fragment = document.createDocumentFragment();
