@@ -21,10 +21,10 @@ You can download the latest release here: [https://github.com/Nicholas-Westby/do
 
 You'll download the ZIP file, unzip it, then inspect the files, which will be:
 
-* dompiler.js The main Dompiler JavaScript file.
-* events.js If you want to use events with Dompiler.
-* dompiler.min.js The minified version of the Dompiler JavaScript file.
-* events.min.js The minified version of the Events file.
+* **dompiler.js** The main Dompiler JavaScript file.
+* **events.js** If you want to use events with Dompiler.
+* **dompiler.min.js** The minified version of the Dompiler JavaScript file.
+* **events.min.js** The minified version of the Events file.
 
 You can use the `.js` files if you want to start experimenting with Dompiler.
 
