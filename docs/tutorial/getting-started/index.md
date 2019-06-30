@@ -50,7 +50,7 @@ Once you've acquired the files (either via download or via NPM), you can start r
 
 If you like, you can also browse the [examples](/examples/).
 
-Note that the tutorial an examples all show how to use Dompiler in the browser. This is because each of them are interactive and the browser version is the easiest one to make this possible.
+Note that the tutorial and examples all show how to use Dompiler in the browser. This is because each of them are interactive and the browser version is the easiest one to make this possible.
 
 The only real difference between the two is that the browser version will do something like this:
 
