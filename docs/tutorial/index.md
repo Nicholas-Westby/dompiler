@@ -38,6 +38,12 @@ Each page in this tutorial builds on the knowledge from the previous pages. It i
         Reference DOM nodes in your JavaScript.
     </dd>
     <dt>
+        <a href="modules/">Modules</a>
+    </dt>
+    <dd>
+        Split your Dompiler markup across multiple files.
+    </dd>
+    <dt>
         <a href="forms/">Forms</a>
     </dt>
     <dd>
