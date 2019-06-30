@@ -9,7 +9,7 @@ import { renderCell } from "./cell.js";
 export function renderGrid() {
 
     // Variables.
-    let items = getData().map(renderCell),
+    let data = getData(),
         {
             compile,
             nestElements
@@ -18,7 +18,7 @@ export function renderGrid() {
     // Compile markup string into a document fragment.
     let compiled = compile(`
         <ul class="grid">
-            ${nestElements("grid-items", items)}
+            ${nestElements(data.map(renderCell))}
         </ul>
     `);
 

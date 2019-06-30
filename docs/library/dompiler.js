@@ -9,6 +9,7 @@ class Dompiler {
     constructor() {
         this.nestedElements = {};
         this.namedElements = {};
+        this.nestedCount = 0;
     }
 
     /**
@@ -104,13 +105,14 @@ class Dompiler {
     /**
      * Nests the elements in the specified document fragments within a string that will
      * at some point be compiled with Dompiler.
-     * @param {string} key The key to use to look up the document fragment during compilation.
      * @param {DocumentFragment[]} fragments The document fragments to nest.
      * @returns {string} Outputs a DOM element that will be used during compilation in order
      *          to let Dompiler know where to apply the nested elements.
      */
-    nestElements(key, fragments) {
-        let fragment = document.createDocumentFragment();
+    nestElements(fragments) {
+        let key = this.nestedCount.toString(),
+            fragment = document.createDocumentFragment();
+        this.nestedCount++;
         fragments.forEach(x => {
             fragment.appendChild(x);
         });
