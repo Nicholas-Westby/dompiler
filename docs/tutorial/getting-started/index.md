@@ -28,7 +28,7 @@ You'll download the ZIP file, unzip it, then inspect the files, which will be:
 
 You can use the `.js` files if you want to start experimenting with Dompiler.
 
-If you plan to use Dompiler on production, you'll likely want the `.min.js` files (becaus they're smaller).
+If you plan to use Dompiler on production, you'll likely want the `.min.js` files (because they're smaller).
 
 ## Option 2: Install with NPM
 
