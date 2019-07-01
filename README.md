@@ -2,7 +2,9 @@
 
 ### What is Dompiler?
 
-Dompiler is a very small library (literally a couple KB) built with plain JavaScript.
+Dompiler is a very small library (literally a KB) built with plain JavaScript. Really, it's tiny:
+
+![Dompiler BundlePhobia Badge](https://badgen.net/bundlephobia/minzip/dompiler "Dompiler BundlePhobia Badge")
 
 It allows you to build DOM elements in JavaScript rather than in HTML.
 
