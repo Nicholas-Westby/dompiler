@@ -1,7 +1,7 @@
 {
     "name": "dompiler",
     "version": "1.1.0",
-    "description": "Dompiler is a tiny framework that helps with HTML templating with plain JavaScript.",
+    "description": "Dompiler turns JavaScript template literals into an HTML templating engine.",
     "main": "index.js",
     "scripts": {
         "build": "node build.js",
