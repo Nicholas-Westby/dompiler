@@ -49,4 +49,10 @@ Each page in this tutorial builds on the knowledge from the previous pages. It i
     <dd>
         Change the DOM based on what the user types into form fields.
     </dd>
+    <dt>
+        <a href="events/">Events</a>
+    </dt>
+    <dd>
+        Emit and listen for events to send messages between Dompiler modules.
+    </dd>
 </dl>
