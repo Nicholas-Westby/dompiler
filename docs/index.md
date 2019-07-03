@@ -35,3 +35,5 @@ title: Dompiler
         View Dompiler on GitHub. The "docs" folder contains the source code for this website (i.e., dompiler.com).
     </dd>
 </dl>
+
+![Dompiler Grid Example with Code](assets/images/code-and-grid.png?raw=true "Dompiler Grid Example with Code")
