@@ -36,4 +36,4 @@ title: Dompiler
     </dd>
 </dl>
 
-![Dompiler Grid Example with Code](assets/images/code-and-grid.png?raw=true "Dompiler Grid Example with Code")
+![Dompiler Grid Example with Code](assets/images/code-and-grid-v2.png?raw=true "Dompiler Grid Example with Code")
