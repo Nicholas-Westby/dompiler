@@ -36,6 +36,6 @@ title: Dompiler
     </dd>
 </dl>
 
-<a href="/assets.images/code-and-grid-v2.png" target="_blank" title="Navigate to Larger Image">
+<a href="/assets/images/code-and-grid-v2.png" target="_blank" title="Navigate to Larger Image">
     <img src="/assets/images/code-and-grid-v2.png" alt="Dompiler Grid Example with Code" />
 </a>
