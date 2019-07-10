@@ -14,3 +14,4 @@ Here are some of the benefits:
 * **Documented** It has a number of examples and an extensive tutorial. The code is also well commented.
 * **Simple** With fewer than a dozen functions to learn, it's extremely simple.
 * **Flexible** You can use it directly in the browser or via NPM.
+* **Low Maintenance** Since Dompiler is just using plain JavaScript (and a small amount at that), there is little risk of this library growing stale. Understanding it in order to contribute (e.g., a bug fix) is very easy.
