@@ -24,6 +24,6 @@
     "homepage": "https://www.dompiler.com/",
     "devDependencies": {
         "node-gzip": "^1.1.2",
-        "terser": "^4.0.1"
+        "terser": "^4.8.1"
     }
 }
